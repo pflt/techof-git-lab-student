@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TechOf Git Lab: projeto prático para aprender Git e GitHub.">
+  <title>TechOf Git Lab</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="TechOf Git Lab">
+        <img src="assets/techof-logo.svg" alt="TechOf">
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <a href="#about">Sobre</a>
+        <a href="#practice">Hands-On</a>
+        <a href="#project">Projeto</a>
+      </nav>
+
+      <button id="theme-toggle" class="button button-secondary" type="button" aria-label="Alternar tema">
+        Tema
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="top" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">TechOf · Git Fundamentals</span>
+          <h1>Aprende Git através de um projeto real.</h1>
+          <p class="lead">
+            Evolui este website com commits, branches, conflitos, Pull Requests e code review.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#practice">Começar laboratório</a>
+            <button id="tip-button" class="button button-secondary" type="button">Gerar dica Git</button>
+          </div>
+
+          <p id="git-tip" class="tip" aria-live="polite">
+            Dica: cria commits pequenos, claros e fáceis de rever.
+          </p>
+        </div>
+
+        <aside class="terminal-card" aria-label="Exemplo de comandos Git">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <strong>terminal</strong>
+          </div>
+          <pre><code>$ git init
+$ git status
+$ git add .
+$ git commit -m "feat: criar website inicial"</code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <span class="eyebrow">Sobre o projeto</span>
+          <h2>Um laboratório pensado para os cinco Hands-On.</h2>
+        </div>
+        <div class="copy">
+          <p>
+            O website apresenta uma landing page simples em HTML, CSS e JavaScript.
+            Cada exercício altera partes reais da interface e cria um histórico de evolução coerente.
+          </p>
+          <p>
+            O objetivo não é apenas executar comandos: é perceber como o Git apoia trabalho,
+            colaboração e revisão de código.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="practice" class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Percurso prático</span>
+          <h2>5 Hands-On, um único projeto</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="practice-card">
+            <span class="step">01</span>
+            <h3>Preparar ambiente</h3>
+            <p>Instalar Git, configurar identidade e preparar a conta GitHub.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="step">02</span>
+            <h3>Primeiro histórico</h3>
+            <p>Inicializar o projeto, proteger ficheiros e criar commits claros.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="step">03</span>
+            <h3>Publicar no GitHub</h3>
+            <p>Ligar o repositório remoto, criar README e analisar o histórico.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="step">04</span>
+            <h3>Branches e conflitos</h3>
+            <p>Editar o footer em dois ramos e resolver um conflito real.</p>
+          </article>
+
+          <article class="practice-card">
+            <span class="step">05</span>
+            <h3>Colaboração</h3>
+            <p>Clonar, abrir Pull Requests, rever código e integrar alterações.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="section">
+      <div class="container project-panel">
+        <div>
+          <span class="eyebrow">Mini projeto</span>
+          <h2>Constrói o teu portefólio Git.</h2>
+          <p>
+            Personaliza esta página, documenta as decisões e transforma cada alteração
+            num commit que conte a história do projeto.
+          </p>
+        </div>
+
+        <div class="progress-card">
+          <div class="progress-label">
+            <span>Progresso do laboratório</span>
+            <strong id="progress-value">20%</strong>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+          <button id="progress-button" class="button button-primary" type="button">
+            Concluir próximo passo
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footer-message">© <span id="current-year"></span> TechOf — Aprende hoje.</p>
+      <p id="footer-tagline">Constrói amanhã com tecnologia.</p>
+    </div>
+  </footer>
+</body>
+</html>
